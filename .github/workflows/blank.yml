@@ -1,0 +1,14 @@
+name: Run Bridgecrew
+on:
+  push:
+    branches:
+      - master
+  
+jobs:
+    build:
+      name: Check chopd3b IaC rules
+      runs-on: ubuntu-latest
+      steps:
+        # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+        - name: Checkout codebase
+          uses: actions/checkout@v2
