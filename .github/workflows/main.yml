@@ -1,11 +1,11 @@
 #---
-  name: Run Bridgecrew
-  on:
-    push:
-      branches-ignore:
-        - 'master'
+name: Run Bridgecrew
+on:
+  push:
+    branches:
+      - master
   
-  jobs:
+jobs:
     build:
       name: Check chopd3b IaC rules
       runs-on: ubuntu-latest
