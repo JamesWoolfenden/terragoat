@@ -12,3 +12,6 @@ jobs:
         # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
         - name: Checkout codebase
           uses: actions/checkout@v2
+        - name: Run Bridgecrew
+          id: Bridgecrew
+          uses: bridgecrewio/bridgecrew-action@master
